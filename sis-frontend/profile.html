@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>My Profile - Student Information System</title>
+</head>
+<body data-page="profile">
+<div class="app">
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="main">
+    <header class="topbar" id="topbar"></header>
+    <main class="content">
+      <section class="card">
+        <div class="profile-head">
+          <span class="avatar lg" id="profileAvatar"></span>
+          <div><h2 id="profileName"></h2><p id="profileSub"></p></div>
+        </div>
+        <div class="profile-grid" id="profileGrid"></div>
+        <p class="form-error" id="profileError" role="alert"></p>
+        <div class="profile-actions">
+          <button class="btn btn-primary" id="editBtn" type="button">Edit profile</button>
+          <button class="btn btn-accent" id="saveBtn" type="button" hidden>Save changes</button>
+          <button class="btn btn-ghost" id="cancelBtn" type="button" hidden>Cancel</button>
+        </div>
+        <p class="toast" id="profileMsg" role="status"></p>
+        <p class="hint">Roll number, course, branch, year and semester are set by the university. You can edit your name, email and phone.</p>
+      </section>
+      <a class="btn btn-ghost btn-back" href="dashboard.html">Back to Dashboard</a>
+    </main>
+  </div>
+</div>
+<div class="scrim" id="scrim"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
