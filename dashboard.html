@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard - Student Information System</title>
+</head>
+
+<body data-page="dashboard">
+  <div class="app">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="main">
+      <header class="topbar" id="topbar"></header>
+      <main class="content">
+        <section class="welcome">
+          <h2>Welcome, <span id="welcomeName"></span></h2>
+          <p id="welcomeSub"></p>
+          <p id="today"></p>
+        </section>
+
+        <section class="stat-strip" aria-label="Summary">
+          <div class="stat"><span>Overall attendance</span><strong id="statAttendance">-</strong></div>
+          <div class="stat"><span>Courses this semester</span><strong id="statCourses">-</strong></div>
+          <div class="stat"><span>Semester</span><strong id="statSemester">-</strong></div>
+          <div class="stat"><span>Average marks</span><strong id="statMarks">-</strong></div>
+        </section>
+
+        <section class="tiles">
+          <a class="tile" href="profile.html"><span class="tile-icon" data-icon="profile"></span>
+            <div>
+              <h3>My Profile</h3>
+              <p>Your personal and academic details</p>
+            </div>
+          </a>
+          <a class="tile" href="courses.html"><span class="tile-icon" data-icon="courses"></span>
+            <div>
+              <h3>My Courses</h3>
+              <p>OS, DSA, DBMS, AI and CN</p>
+            </div>
+          </a>
+          <a class="tile" href="attendance.html"><span class="tile-icon" data-icon="attendance"></span>
+            <div>
+              <h3>Attendance</h3>
+              <p>Subject-wise attendance percentage</p>
+            </div>
+          </a>
+          <a class="tile" href="results.html"><span class="tile-icon" data-icon="results"></span>
+            <div>
+              <h3>Results</h3>
+              <p>Marks and grades for each subject</p>
+            </div>
+          </a>
+          <!-- <a class="tile os" href="os-process.html" style="grid-column: 1 / -1"><span class="tile-icon" data-icon="os"></span><div><h3>OS Process</h3><p>CPU scheduling, priority scheduling, process queue and synchronization, running live</p></div></a> -->
+        </section>
+      </main>
+    </div>
+  </div>
+  <div class="scrim" id="scrim"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
